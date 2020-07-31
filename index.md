@@ -3,6 +3,6 @@ layout: homepage.liquid
 title: Roman Ruiz-Esparza
 ---
 
-## Welcome to my blog
+## Roman Ruiz-Esparza
 
-Hello WRLD. I am Roman.
+Web developer, iOS enthusiast. I like to document what I learn.
