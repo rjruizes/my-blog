@@ -1,8 +1,8 @@
 ---
 layout: homepage.liquid
-title: Horsin' Around
+title: Roman Ruiz-Esparza
 ---
 
-## Welcome to Hollywoo
+## Welcome to my blog
 
-Hello. I am BoJack. Horseman, obviously
+Hello WRLD. I am Roman.
