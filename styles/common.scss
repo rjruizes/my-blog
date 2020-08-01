@@ -14,7 +14,7 @@
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "IBM Plex Sans", sans-serif;
   color: #394655;
   background: #fffef7;
@@ -43,6 +43,7 @@ a {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
+    width: auto;
     margin: 32px 5%;
   }
 }
