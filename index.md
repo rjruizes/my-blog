@@ -5,4 +5,4 @@ title: Roman Ruiz-Esparza
 
 ## Roman Ruiz-Esparza
 
-Web developer, iOS enthusiast. I like to document what I learn.
+Web developer and iOS enthusiast blogging what I learn
