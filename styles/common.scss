@@ -15,9 +15,26 @@
 
 body {
   font-size: 1rem;
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #394655;
   background: #fffef7;
+}
+
+.header {
+  margin-bottom: 4em;
+  p {
+    margin: 8px 0;
+  }
+}
+
+h1 {
+  font-size: 1.2em;
+  font-family: Helvetica, Arial;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-weight: normal;
 }
 
 .container {

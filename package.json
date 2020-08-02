@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Arpit Batra (arpitbatra123@gmail.com)",
+  "author": "Roman Ruiz-Esparza",
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
