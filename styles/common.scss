@@ -21,7 +21,12 @@ body {
 }
 
 .header {
+  font-size: 0.9rem;
+  margin-top: 1.5em;
   margin-bottom: 4em;
+  h2 {
+    font-size: 1.3em;
+  }
   p {
     margin: 8px 0;
   }
@@ -39,7 +44,7 @@ h2 {
 
 .container {
   width: 600px;
-  margin: 40px auto;
+  margin: 0 auto;
   blockquote {
     margin: 16px 0;
     padding: 0 1em;
