@@ -1,11 +1,11 @@
 ::selection {
   color: white;
-  background-color: brown;
+  background-color: #007cff;
 }
 
 ::-moz-selection {
   color: white;
-  background-color: brown;
+  background-color: #007cff;
 }
 
 * {
@@ -16,12 +16,14 @@
 body {
   font-size: 1rem;
   font-family: Helvetica, Arial, sans-serif;
-  color: #394655;
-  background: #fffef7;
+  // color: #394655;
+  color: #fff;
+  // background: #fffef7;
+  background-color: #000;
 }
 
 .header {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 1.5em;
   margin-bottom: 4em;
   h2 {
@@ -33,7 +35,8 @@ body {
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 1.9em;
+  font-weight: normal;
   font-family: Helvetica, Arial;
   margin-bottom: 1em;
 }
@@ -48,14 +51,14 @@ h2 {
   blockquote {
     margin: 16px 0;
     padding: 0 1em;
-    color: brown;
+    color: #007cff;
     border-left: 0.25em solid;
   }
 }
 
 a {
   text-decoration: none;
-  color: brown;
+  color: #007cff;
 
   &:hover {
     cursor: pointer;
