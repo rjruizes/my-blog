@@ -1,3 +1,7 @@
+:root {
+  font-size: 1.25rem;
+}
+
 ::selection {
   color: white;
   background-color: #007cff;
@@ -14,12 +18,17 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-family: Helvetica, Arial, sans-serif;
   // color: #394655;
   color: #fff;
   // background: #fffef7;
   background-color: #000;
+}
+@media (min-width: 60em) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 .header {
