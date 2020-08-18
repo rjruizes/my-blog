@@ -8,27 +8,43 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/homepage.css" />
+    <link rel="stylesheet" href="./styles/blogpost.css" />
+    <link rel="stylesheet" href="./styles/prism-theme.css"/>
+    <script>
+
+    </script>
   </head>
   <body>
+    {% set js %}
+      {% include "dark-theme.js" %}
+    {% endset %}
+    <script>
+      {{ js | safe }}
+    </script>
+
     <div class="container">
-      {% include header %}
-      <h4 class="category">Posts</h4>
+      {% include 'header.njk' %}
+      
       <ul class="posts">
-      {% for post in collections.posts reversed %}
+      {% for post in collections.posts | reverse %}
         <li class="post">
-          <span class="post-title">
+          <div class="post-title">
             {% if post.data.externalLink %}
               <a href="{{ post.data.externalLink }}" target="__blank">{{ post.data.title }}</a>
             {% else %}
               <a href="{{ post.url }}">{{ post.data.title }}</a>
             {% endif %}
-          </span>
-          <span class="post-date">
-            {{ post.date | date: "%b %Y" | downcase }}
-          </span>
+          </div>
+          <div class="post-container">
+            <div class='content excerpt'>
+              {% excerpt post %}
+            </div>
+          </div>
+          <span class="post-date">{{ post.date | date("MMM D, YYYY") }}</span>
         </li>
       {% endfor %}
     </ul>
     </div>
+    
   </body>
 </html>

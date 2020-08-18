@@ -11,13 +11,21 @@
     <link rel="stylesheet" href="../../styles/prism-theme.css"/>
   </head>
   <body>
-    <div class="container post-container">
-      {% include header %}
-      <h1>{{ title }}</h1>
-      <div class='content'>{{ content }}</div>
-      <div class="back-link">
-        <a href="/">← Back</a>
+    {% set js %}
+      {% include "dark-theme.js" %}
+    {% endset %}
+    <script>
+      {{ js | safe }}
+    </script>
+
+    <div class="container">
+      {% include 'header.njk' %}
+      <div class="post-container">
+        <div class="post-date">{{ page.date | date("MMM D, YYYY") }}</div>
+        <h1>{{ title }}</h1>
+        <div class='content'>{{ content | safe }}</div>
       </div>
     </div>
+    
   </body>
 </html>

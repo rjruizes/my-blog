@@ -17,13 +17,41 @@
   padding: 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: rgb(217, 217, 217);
+
+    code:not([class*="language-"]) {
+      background-color: #2f2f2f;
+      border: 1px solid #555;
+    }
+  }
+}
+body.dark-theme {
+  background-color: #000;
+  color: rgb(217, 217, 217);
+
+  code:not([class*="language-"]) {
+    background-color: #2f2f2f;
+    border: 1px solid #555;
+  }
+}
+body {
+  background-color: #fff;
+  color: #000;
+
+  code:not([class*="language-"]) {
+    background-color: #f8f8f8;
+    border: 1px solid #dddddd;
+  }
+}
+
 body {
   font-size: 0.85rem;
   font-family: Helvetica, Arial, sans-serif;
   // color: #394655;
-  color: #fff;
   // background: #fffef7;
-  background-color: #000;
 }
 @media (min-width: 60em) {
   body {
@@ -31,15 +59,22 @@ body {
   }
 }
 
+button#theme-btn {
+  color: currentColor;
+  cursor: pointer;
+  float:right;
+  background-color: transparent;
+  border: none;
+}
 .header {
-  font-size: 0.8rem;
+  font-size: 0.75em;
   margin-top: 1.5em;
   margin-bottom: 4em;
   h2 {
     font-size: 1.3em;
-  }
-  p {
-    margin: 8px 0;
+    a {
+      color: currentColor;
+    }
   }
 }
 
@@ -52,6 +87,24 @@ h1 {
 
 h2 {
   font-weight: normal;
+}
+
+// Select all text wrapped in `` in markdown - generated a `code` tag without a language class
+code:not([class*="language-"]) {
+  padding: 0.2em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.post-date {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  color: #999;
+}
+
+hr {
+  border: 1px solid #222;
 }
 
 .container {
