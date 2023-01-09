@@ -14,7 +14,7 @@
   "author": "Roman Ruiz-Esparza",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "concurrently": "^5.1.0",
     "node-sass": "^4.13.1",
     "nunjucks-date-filter": "^0.1.1"
